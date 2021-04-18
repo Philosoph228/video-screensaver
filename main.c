@@ -21,6 +21,7 @@ LRESULT WINAPI ScreenSaverProc(HWND hWnd, UINT message, WPARAM wParam,
   if (WM_GRAPH_EVENT == message)
   {
     DShowPlayer_HandleGraphEvent(g_pDPlayer, OnGraphEvent);
+    return 0;
   }
 
   switch (message)
